@@ -28,7 +28,7 @@ jobs:
         with:
           submodules: recursive
       - run: mkdir build
-      - run: cp logos/rendered build/logos
+      - run: cp logos/rendered build/logos -r
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
